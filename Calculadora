@@ -40,7 +40,7 @@ public class Aplicacao {
             
             JOptionPane.showMessageDialog (null , "A divisão é " + div, "Divisão de dois inteiros:", JOptionPane.PLAIN_MESSAGE );
         }
-        else if( resp.equals("divisão")){
+        else if( resp.equals("multiplicação")){
             String numprim = JOptionPane.showInputDialog( "Coloque o primeiro número:");
             String numseg = JOptionPane.showInputDialog( "Coloque o segundo número:");
         
@@ -51,7 +51,7 @@ public class Aplicacao {
             
             JOptionPane.showMessageDialog (null , "A multiplicação é " + mult, "Multilicação de dois inteiros:", JOptionPane.PLAIN_MESSAGE );
         }else{
-            JOptionPane.showMessageDialog (null , "aprende a ler porra!");
+            JOptionPane.showMessageDialog (null , "resposta não corresponde ao objetivo");
         }
         
         
