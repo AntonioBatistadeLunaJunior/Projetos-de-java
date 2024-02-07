@@ -1,0 +1,60 @@
+package aplicacao;
+
+import javax.swing.JOptionPane;
+public class Aplicacao {
+
+    public static void main(String[] args) {
+        
+        
+        String resp = JOptionPane.showInputDialog ("escolha o tipo de operação básica: ");
+        if( resp.equals("soma")){
+            String numprim = JOptionPane.showInputDialog( "Coloque o primeiro número:");
+            String numseg = JOptionPane.showInputDialog( "Coloque o segundo número:");
+        
+            int num1 = Integer.parseInt (numprim);
+            int num2 = Integer.parseInt (numseg);
+        
+            int soma = num1 + num2;
+        
+            JOptionPane.showMessageDialog (null , "A soma é " + soma, "Soma de dois inteiros:", JOptionPane.PLAIN_MESSAGE );
+        }
+        else if( resp.equals("subtração")){
+            String numprim = JOptionPane.showInputDialog( "Coloque o primeiro número:");
+            String numseg = JOptionPane.showInputDialog( "Coloque o segundo número:");
+        
+            int num1 = Integer.parseInt (numprim);
+            int num2 = Integer.parseInt (numseg);
+            
+            int sub = num1 - num2;
+            
+            JOptionPane.showMessageDialog (null , "A subtração é " + sub, "Subtração de dois inteiros:", JOptionPane.PLAIN_MESSAGE );
+        }
+        else if( resp.equals("divisão")){
+            String numprim = JOptionPane.showInputDialog( "Coloque o primeiro número:");
+            String numseg = JOptionPane.showInputDialog( "Coloque o segundo número:");
+        
+            int num1 = Integer.parseInt (numprim);
+            int num2 = Integer.parseInt (numseg);
+            
+            int div = num1 / num2;
+            
+            JOptionPane.showMessageDialog (null , "A divisão é " + div, "Divisão de dois inteiros:", JOptionPane.PLAIN_MESSAGE );
+        }
+        else if( resp.equals("divisão")){
+            String numprim = JOptionPane.showInputDialog( "Coloque o primeiro número:");
+            String numseg = JOptionPane.showInputDialog( "Coloque o segundo número:");
+        
+            int num1 = Integer.parseInt (numprim);
+            int num2 = Integer.parseInt (numseg);
+            
+            int mult = num1 * num2;
+            
+            JOptionPane.showMessageDialog (null , "A multiplicação é " + mult, "Multilicação de dois inteiros:", JOptionPane.PLAIN_MESSAGE );
+        }else{
+            JOptionPane.showMessageDialog (null , "aprende a ler porra!");
+        }
+        
+        
+    }
+    
+}
